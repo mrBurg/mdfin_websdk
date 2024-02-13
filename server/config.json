@@ -1,0 +1,78 @@
+{
+  "versionIP": "IPv4",
+  "port": {
+    "http": 80,
+    "https": 443
+  },
+  "status": {
+    "ok": 200,
+    "movedPermanently": 301,
+    "temporaryRedirect": 307,
+    "badRequest": 400,
+    "unauthorized": 401,
+    "notFound": 404,
+    "internalServerError": 500
+  },
+  "corsOptions": {
+    "origin": "*",
+    "optionsSuccessStatus": 200,
+    "credentials": true
+  },
+  "paths": {
+    "public": "public"
+  },
+  "certificate": {
+    "key": "certificates/localhost.key",
+    "cert": "certificates/localhost.cert"
+  },
+  "uris": {
+    "all": "*",
+    "root": "/"
+  },
+  "encoding": "utf8",
+  "lang": "ua",
+  "domData": {
+    "metaData": [
+      {
+        "name": "charset",
+        "data": "utf-8"
+      }
+    ],
+    "metaHttpEquivs": [
+      {
+        "name": "X-UA-Compatible",
+        "content": "IE=edge"
+      }
+    ],
+    "metaNames": [
+      {
+        "name": "viewport",
+        "content": "width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+      }
+    ],
+    "title": "WEB-SDK",
+    "link": [
+      {
+        "rel": "icon",
+        "href": "favicon.ico"
+      },
+      {
+        "rel": "stylesheet",
+        "href": "/index.css"
+      }
+    ],
+    "script": [
+      {
+        "type": "text/javascript",
+        "src": "https://localhost:8443/sdk/js/v1/recognid.min.js",
+        "dev": "https://localhost:8443/sdk/js/v1/recognid.js",
+        "test": "https://recid.finmdtest.com/sdk/js/v1/recognid.min.js",
+        "prod": "https://recognid.com/sdk/js/v1/recognid.min.js"
+      },
+      {
+        "type": "text/javascript",
+        "src": "/index.js"
+      }
+    ]
+  }
+}

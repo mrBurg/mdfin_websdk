@@ -1,0 +1,9 @@
+<% const env = 'dev'; %>
+
+<body>
+  <%- include('./content') %>
+
+  <% domData.script.forEach((item) => { %>
+  <script type="<%= item.type %>" src="<%= item[env] || item.src %>"></script>
+  <% }) %>
+</body>

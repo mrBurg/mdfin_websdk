@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ES2017", "DOM"],
+    "types": ["node"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["declaration.d.ts", "src/**/*"]
+}

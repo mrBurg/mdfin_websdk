@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+  <head>
+    <title>WEB-SDK</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  </head>
+
+  <body>
+    <div id='recognid-root'></div>
+
+    <script type="text/javascript" src="https://recid.finmdtest.com/sdk/js/v1/recognid.js"></script>
+
+    <script type="text/javascript">
+      function contentReady() {
+        const recognid = new RecognID({
+          apiKey: 'Basic bWRmaW46cXdlcnR5MTIzNDU=',
+          parentId: 'recognid-root',
+          onSession(err, response) {
+            if (err) {
+              throw err;
+            }
+
+            console.groupCollapsed('Response data');
+            console.log(response);
+            console.groupEnd();
+          },
+        });
+
+        recognid.setParams({
+          locale: 'en',
+          resources: '/liveness-static/facetec/resources',
+        });
+
+        recognid.init({
+          request_id: '',
+          return_url: 'https://recid.finmdtest.com?resp',
+          webhook_url:
+            'http://mockbin.org/bin/d3877fb2-1cc5-4f55-a2e7-a73fba20553b?foo=bar&foo=baz&data=12345&prod=0',
+          stages: ['LivenessDetection', 'IDDocVerification', 'WatchlistsCheck'],
+          language: 'ro',
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', contentReady);
+
+    </script>
+
+  </body>
+
+</html>

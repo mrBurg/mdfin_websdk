@@ -1,0 +1,53 @@
+<svg version="1.1" id="preloader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" width="92px" height="92px" viewBox="0 0 92 92" style="enable-background:new 0 0 92 92;" xml:space="preserve">
+
+	<style>
+		#preloader {
+			max-width: 92px;
+			max-height: 92px;
+			margin: auto;
+			display: block;
+		}
+
+		.preloader-square {
+			fill: transparent;
+		}
+	</style>
+
+	<path class="preloader-square" id="first-element"
+		d="M67.1,20.4L47.3,0.6c-0.8-0.8-2-0.8-2.8,0L24.6,20.4c-0.8,0.8-0.8,2,0,2.8L44.4,43c0.8,0.8,2,0.8,2.8,0 l19.8-19.8C67.8,22.4,67.8,21.2,67.1,20.4z M47.3,40.2c-0.8,0.8-2,0.8-2.8,0l-17-17c-0.8-0.8-0.8-2,0-2.8l17-17 c0.8-0.8,2-0.8,2.8,0l17,17c0.8,0.8,0.8,2,0,2.8L47.3,40.2z">
+		<animate id="firstShow" href="#first-element" attributeName="fill" attributeType="XML" from="transparent"
+			to="#2d221e" dur="0.3s" begin="0s;fourthShow.end" fill="freeze" />
+
+		<animate id="firstHide" href="#first-element" attributeName="fill" attributeType="XML" from="#2d221e"
+			to="transparent" dur="0.5s" begin="firstShow.end + 0.3s" fill="freeze" />
+	</path>
+
+
+	<path class="preloader-square" id="second-element"
+		d="M91.1,44.4L71.3,24.6c-0.8-0.8-2-0.8-2.8,0L48.7,44.4c-0.8,0.8-0.8,2,0,2.8l19.8,19.8c0.8,0.8,2,0.8,2.8,0 l19.8-19.8C91.9,46.5,91.9,45.2,91.1,44.4z M71.3,64.2c-0.8,0.8-2,0.8-2.8,0l-17-17c-0.8-0.8-0.8-2,0-2.8l17-17 c0.8-0.8,2-0.8,2.8,0l17,17c0.8,0.8,0.8,2,0,2.8L71.3,64.2z">
+		<animate id="secondShow" href="#second-element" attributeName="fill" attributeType="XML" from="transparent"
+			to="#2d221e" dur="0.3s" begin="firstShow.end" fill="freeze" />
+
+		<animate id="secondHide" href="#second-element" attributeName="fill" attributeType="XML" from="#2d221e"
+			to="transparent" dur="0.5s" begin="secondShow.end + 0.3s" fill="freeze" />
+	</path>
+
+	<path class="preloader-square" id="third-element"
+		d="M67.1,68.5L47.3,48.7c-0.8-0.8-2-0.8-2.8,0L24.6,68.5c-0.8,0.8-0.8,2,0,2.8l19.8,19.8c0.8,0.8,2,0.8,2.8,0 l19.8-19.8C67.8,70.5,67.8,69.2,67.1,68.5z M47.3,88.3c-0.8,0.8-2,0.8-2.8,0l-17-17c-0.8-0.8-0.8-2,0-2.8l17-17 c0.8-0.8,2-0.8,2.8,0l17,17c0.8,0.8,0.8,2,0,2.8L47.3,88.3z">
+		<animate id="thirdShow" href="#third-element" attributeName="fill" attributeType="XML" from="transparent"
+			to="#2d221e" dur="0.3s" begin="secondShow.end" fill="freeze" />
+
+		<animate id="thirdHide" href="#third-element" attributeName="fill" attributeType="XML" from="#2d221e"
+			to="transparent" dur="0.5s" begin="thirdShow.end + 0.3s" fill="freeze" />
+	</path>
+
+	<path class="preloader-square" id="fourth-element"
+		d="M43,44.4L23.2,24.6c-0.8-0.8-2-0.8-2.8,0L0.6,44.4c-0.8,0.8-0.8,2,0,2.8l19.8,19.8c0.8,0.8,2,0.8,2.8,0 L43,47.3C43.8,46.5,43.8,45.2,43,44.4z M23.2,64.2c-0.8,0.8-2,0.8-2.8,0l-17-17c-0.8-0.8-0.8-2,0-2.8l17-17c0.8-0.8,2-0.8,2.8,0 l17,17c0.8,0.8,0.8,2,0,2.8L23.2,64.2z">
+		<animate id="fourthShow" href="#fourth-element" attributeName="fill" attributeType="XML" from="transparent"
+			to="#2d221e" dur="0.3s" begin="thirdShow.end" fill="freeze" />
+
+		<animate id="fourthHide" href="#fourth-element" attributeName="fill" attributeType="XML" from="#2d221e"
+			to="transparent" dur="0.5s" begin="fourthShow.end + 0.3s" fill="freeze" />
+	</path>
+</svg>

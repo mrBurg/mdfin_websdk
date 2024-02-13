@@ -1,0 +1,18 @@
+<head>
+  <title><%= domData.title %></title>
+  <% domData.metaData.forEach((item) => { %>
+  <meta <%= item.name %>="<%= item.data %>" />
+  <% }) %>
+
+  <% domData.metaHttpEquivs.forEach((item) => { %>
+  <meta http-equiv="<%= item.name %>" content="<%= item.content %>" />
+  <% }) %>
+
+  <% domData.metaNames.forEach((item) => { %>
+  <meta name="<%= item.name %>" content="<%= item.content %>" />
+  <% }) %>
+
+  <% domData.link.forEach((item) => { %>
+  <link rel="<%= item.rel %>" href="<%= item.href %>" />
+  <% }) %>
+</head>
